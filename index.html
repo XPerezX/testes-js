@@ -37,10 +37,16 @@
         return clazz;
     }
     function Cubo(n1){
-        
+        if (Number.isInteger(n1)) {
         cont = (n1 * n1) *n1;
         
         return cont;
+        }
+        else{
+            return "Não é numero";
+
+        };
+      
     }
 
 
@@ -88,14 +94,21 @@
     console.log("Teste 9 MP - Numero ao Cubo");
     console.log(Cubo([]));
     
-
+    console.log("Teste 10 ");
     console.log((Cubo(5)==125))
-    console.log((Cubo("")==NaN))   //x
+    console.log("Teste 11 ");
+    console.log((Cubo(" ")=="Não é numero"));   //x
+    console.log("Teste 12 ");
     console.log((Cubo(0)==0))
+    console.log("Teste 13 ");
     console.log((Cubo(-0)==0))
-    console.log((Cubo("a")==NaN))  //x
+    console.log("Teste 14 ");
+    console.log((Cubo("a")=="Não é numero"))  //x
+    console.log("Teste 15 ");
     console.log((Cubo(-2)==-8))
+    console.log("Teste 16 ");
     console.log((Cubo(10000)==1000000000000))
+    console.log("Teste 17 ");
     console.log((Cubo(-10000)==-1000000000000))
 
 
