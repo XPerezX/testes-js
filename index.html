@@ -37,12 +37,10 @@
         return clazz;
     }
     function Cubo(n1){
+        
         cont = (n1 * n1) *n1;
         
         return cont;
-
-
-
     }
 
 
@@ -88,6 +86,18 @@
 
 
     console.log("Teste 9 MP - Numero ao Cubo");
-    console.log(Cubo(5));
+    console.log(Cubo([]));
+    
+
+    console.log((Cubo(5)==125))
+    console.log((Cubo("")==NaN))   //x
+    console.log((Cubo(0)==0))
+    console.log((Cubo(-0)==0))
+    console.log((Cubo("a")==NaN))  //x
+    console.log((Cubo(-2)==-8))
+    console.log((Cubo(10000)==1000000000000))
+    console.log((Cubo(-10000)==-1000000000000))
+
+
 </script>
 </html>
